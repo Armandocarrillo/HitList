@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1054549D250E8F560050DC7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1054549C250E8F560050DC7F /* Default-568h@2x.png */; };
 		107C9A28250E87F30083CCCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C9A27250E87F30083CCCA /* AppDelegate.swift */; };
 		107C9A2A250E87F30083CCCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C9A29250E87F30083CCCA /* SceneDelegate.swift */; };
 		107C9A2C250E87F30083CCCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C9A2B250E87F30083CCCA /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1054549C250E8F560050DC7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		107C9A24250E87F30083CCCA /* HitList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HitList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		107C9A27250E87F30083CCCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		107C9A29250E87F30083CCCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +41,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10545498250E8D5A0050DC7F /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				107C9A27250E87F30083CCCA /* AppDelegate.swift */,
+				107C9A29250E87F30083CCCA /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		10545499250E8D6D0050DC7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				107C9A2B250E87F30083CCCA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1054549A250E8D7A0050DC7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				107C9A2D250E87F30083CCCA /* Main.storyboard */,
+				107C9A35250E87F40083CCCA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1054549B250E8DAE0050DC7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				107C9A33250E87F40083CCCA /* Assets.xcassets */,
+				107C9A38250E87F40083CCCA /* Info.plist */,
+				107C9A30250E87F30083CCCA /* HitList.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		107C9A1B250E87F30083CCCA = {
 			isa = PBXGroup;
 			children = (
+				1054549C250E8F560050DC7F /* Default-568h@2x.png */,
 				107C9A26250E87F30083CCCA /* HitList */,
 				107C9A25250E87F30083CCCA /* Products */,
 			);
@@ -58,14 +97,10 @@
 		107C9A26250E87F30083CCCA /* HitList */ = {
 			isa = PBXGroup;
 			children = (
-				107C9A27250E87F30083CCCA /* AppDelegate.swift */,
-				107C9A29250E87F30083CCCA /* SceneDelegate.swift */,
-				107C9A2B250E87F30083CCCA /* ViewController.swift */,
-				107C9A2D250E87F30083CCCA /* Main.storyboard */,
-				107C9A33250E87F40083CCCA /* Assets.xcassets */,
-				107C9A35250E87F40083CCCA /* LaunchScreen.storyboard */,
-				107C9A38250E87F40083CCCA /* Info.plist */,
-				107C9A30250E87F30083CCCA /* HitList.xcdatamodeld */,
+				10545498250E8D5A0050DC7F /* App Delegate */,
+				10545499250E8D6D0050DC7F /* Controller */,
+				1054549B250E8DAE0050DC7F /* Resources */,
+				1054549A250E8D7A0050DC7F /* View */,
 			);
 			path = HitList;
 			sourceTree = "<group>";
@@ -129,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				107C9A37250E87F40083CCCA /* LaunchScreen.storyboard in Resources */,
+				1054549D250E8F560050DC7F /* Default-568h@2x.png in Resources */,
 				107C9A34250E87F40083CCCA /* Assets.xcassets in Resources */,
 				107C9A2F250E87F30083CCCA /* Main.storyboard in Resources */,
 			);
@@ -290,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMTQUL7LT8;
-				INFOPLIST_FILE = HitList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HitList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HMTQUL7LT8;
-				INFOPLIST_FILE = HitList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HitList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
